@@ -3,9 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f3f4f6;
   padding: 20px;
-    background: #00008B; 
+  background-color: #00008B; 
 }
 
 .login-card {

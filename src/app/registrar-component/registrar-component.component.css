@@ -5,7 +5,7 @@
   align-items: center;        /* Centra vertical */
   height: 100vh;              /* Ocupar toda la pantalla */
   width: 100%;
-  background: #00008B;       /* Fondo suave opcional */
+  background-color: #00008B;
 }
 
 /* TARJETA DEL FORMULARIO */
