@@ -1,0 +1,61 @@
+/* CENTRAR TODO EL FORMULARIO EN LA PANTALLA */
+.page-center {
+  display: flex;
+  justify-content: center;    /* Centra horizontal */
+  align-items: center;        /* Centra vertical */
+  height: 100vh;              /* Ocupar toda la pantalla */
+  width: 100%;
+  background: #00008B;       /* Fondo suave opcional */
+}
+
+/* TARJETA DEL FORMULARIO */
+.register-container {
+  width: 360px;
+  padding: 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* BOTÓN */
+.btn-registrar {
+  width: 100%;
+  padding: 12px;
+  background: #0057e7;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-registrar:hover {
+  background: #0043b5;
+}
