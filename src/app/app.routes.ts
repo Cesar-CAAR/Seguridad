@@ -3,10 +3,12 @@ import { LoginComponentComponent } from './login-component/login-component.compo
 import { RegistrarComponentComponent } from './registrar-component/registrar-component.component'
 import { HomeComponent } from './home/home.component'
 import { EncriptarComponentComponent } from './encriptar-component/encriptar-component.component'
+import { DesencriptarComponentComponent } from './desencriptar-component/desencriptar-component.component'
 
 export const routes: Routes = [
     { path: '', component: LoginComponentComponent },
-    { path: 'registrar', component: RegistrarComponentComponent},
+    { path: 'registrar', component: RegistrarComponentComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'encriptar', component: EncriptarComponentComponent }
+    { path: 'encriptar', component: EncriptarComponentComponent },
+    { path: 'desencriptar', component: DesencriptarComponentComponent },
 ];
