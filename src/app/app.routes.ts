@@ -6,7 +6,9 @@ import { EncriptarComponentComponent } from './encriptar-component/encriptar-com
 import { DesencriptarComponentComponent } from './desencriptar-component/desencriptar-component.component'
 
 export const routes: Routes = [
-    { path: '', component: LoginComponentComponent },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: 'login', component: LoginComponentComponent },
+
     { path: 'registrar', component: RegistrarComponentComponent },
     { path: 'home', component: HomeComponent },
     { path: 'encriptar', component: EncriptarComponentComponent },
