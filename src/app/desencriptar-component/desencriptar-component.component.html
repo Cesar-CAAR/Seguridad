@@ -18,7 +18,8 @@
     <!-- Texto encriptado -->
     <label for="texto-encriptado">Texto encriptado</label>
     <input id="texto-encriptado" name="textoEncriptado" type="text" placeholder="Ingresa texto encriptado..." [(ngModel)]="textoEncriptado">
-
+    <p class="error" *ngIf="errorLongitud">
+      El texto encriptado debe tener al menos {{MIN_CARACTERES}} caracteres. </p>
     <!-- Botón -->
     <button class="btn" (click)="desencriptar()">Desencriptar</button>
 
