@@ -26,6 +26,9 @@
     <!-- Texto encriptado -->
     <label for="texto-encriptado">Texto encriptado</label>
     <input id="texto-encriptado" name="textoEncriptado" type="text" placeholder="El texto encriptado aparecerá aquí..." [(ngModel)]="textoEncriptado" readonly>
-
+    <button class="btn btn-primary mt-2" (click)="copiarTexto()">
+    Copiar texto
+    </button>
+    
 
 </div>

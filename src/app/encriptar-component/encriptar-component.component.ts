@@ -43,4 +43,17 @@ export class EncriptarComponentComponent {
     }
 
   }
+
+   copiarTexto() {
+    if (!this.textoEncriptado.trim()) {
+      alert("No hay texto para copiar.");
+      return;
+    }
+
+    navigator.clipboard.writeText(this.textoEncriptado)
+      .then(() => alert("Texto copiado al portapapeles."))
+      .catch(() => alert("Hubo un error al copiar el texto."));
+  }
+  
 }
+
