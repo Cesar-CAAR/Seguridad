@@ -17,13 +17,13 @@
 
     <!-- Texto encriptado -->
     <label for="texto-encriptado">Texto encriptado</label>
-    <input id="texto-encriptado" type="text" placeholder="Ingresa texto encriptado...">
+    <input id="texto-encriptado" name="textoEncriptado" type="text" placeholder="Ingresa texto encriptado..." [(ngModel)]="textoEncriptado">
 
     <!-- Botón -->
-    <button class="btn">Desencriptar</button>
+    <button class="btn" (click)="desencriptar()">Desencriptar</button>
 
     <!-- Texto plano -->
     <label for="texto-plano">Texto plano</label>
-    <input id="texto-plano" type="text" placeholder="Aquí aparecerá el texto plano..." readonly>
+    <input id="texto-plano" name="textoPlano" type="text" placeholder="Aquí aparecerá el texto plano..." [(ngModel)]="textoPlano" readonly>
 
 </div>

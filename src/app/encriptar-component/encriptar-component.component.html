@@ -12,10 +12,10 @@
 
     <!-- Ingresar texto -->
     <label for="texto">Ingresar texto</label>
-    <input id="texto" type="text" placeholder="Escribe aquí...">
+    <input id="texto" name="texto" type="text" placeholder="Escribe aquí..." [(ngModel)]="texto"/>
 
     <!-- Botón Encriptar -->
-    <button id="btn-encriptar">Encriptar</button>
+    <button id="btn-encriptar" (click)="encriptar()">Encriptar</button>
 
     <!-- Key 
     <label for="key">Key</label>
@@ -24,7 +24,7 @@
 
     <!-- Texto encriptado -->
     <label for="texto-encriptado">Texto encriptado</label>
-    <input id="texto-encriptado" type="text" placeholder="El texto encriptado aparecerá aquí..." readonly>
+    <input id="texto-encriptado" name="textoEncriptado" type="text" placeholder="El texto encriptado aparecerá aquí..." [(ngModel)]="textoEncriptado" readonly>
 
 
 </div>
