@@ -13,7 +13,8 @@
     <!-- Ingresar texto -->
     <label for="texto">Ingresar texto</label>
     <input id="texto" name="texto" type="text" placeholder="Escribe aquí..." [(ngModel)]="texto"/>
-
+    <p class="error" *ngIf="errorTextoVacio">
+      El texto no puede estar vacío. </p>
     <!-- Botón Encriptar -->
     <button id="btn-encriptar" (click)="encriptar()">Encriptar</button>
 
