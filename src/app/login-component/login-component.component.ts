@@ -17,6 +17,7 @@ export class LoginComponentComponent {
 
   usuario = '';
   password = '';
+  verPassword = false;
 
   login() {
 

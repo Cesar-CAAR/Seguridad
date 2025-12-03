@@ -84,3 +84,27 @@ button:hover {
   color: white;
 }
 
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.toggle-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: #6060ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.toggle-btn:hover {
+  background: #4a4ad6;
+}
+
+
