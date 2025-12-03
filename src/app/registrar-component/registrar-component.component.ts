@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-registrar-component',
@@ -28,7 +29,7 @@ export class RegistrarComponentComponent {
 
   mensajeExito = false;
 
-  constructor(private router: Router) {}
+  constructor(private api: ApiService,private router: Router) {}
 
   // ---- VALIDACIONES EN TIEMPO REAL ---- //
   validarPassword() {
@@ -54,16 +55,21 @@ export class RegistrarComponentComponent {
 
   // -------- REGISTRAR USUARIO ------ //
   registrar() {
-    if (!this.formValido) return;
+  if (!this.formValido) return;
 
-    // Aquí puedes enviar a la API o localStorage
-    console.log("Usuario creado:", this.usuario);
+  this.api.register(this.usuario, this.password).subscribe({
+    next: () => {
+      this.mensajeExito = true;
 
-    this.mensajeExito = true;
+      setTimeout(() => {
+        this.router.navigate(['/']); // login
+      }, 1500);
+    },
+    error: (err) => {
+      console.error(err);
+      alert("Error: no se pudo registrar el usuario");
+    }
+  });
+}
 
-    // Espera 1.5 segundos y manda al login
-    setTimeout(() => {
-      this.router.navigate(['/login']);
-    }, 1500);
-  }
 }
