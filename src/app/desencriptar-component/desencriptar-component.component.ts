@@ -3,11 +3,11 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 import { CommonModule } from '@angular/common';
-
+import { MenuComponent } from '../shared/menu/menu.component';
 @Component({
   selector: 'app-desencriptar-component',
   standalone: true,
-  imports: [RouterModule, FormsModule, CommonModule],
+  imports: [RouterModule, FormsModule, CommonModule, MenuComponent],
   templateUrl: './desencriptar-component.component.html',
   styleUrl: './desencriptar-component.component.css'
 })

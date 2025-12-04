@@ -4,11 +4,11 @@ import { ApiService } from '../services/api.service';
 import { FormsModule } from '@angular/forms';
 import { firstValueFrom } from 'rxjs';
 import { CommonModule } from '@angular/common';
-
+import { MenuComponent } from '../shared/menu/menu.component';
 @Component({
   selector: 'app-encriptar-component',
   standalone: true,
-  imports: [RouterModule, FormsModule, CommonModule],
+  imports: [RouterModule, FormsModule, CommonModule, MenuComponent],
   templateUrl: './encriptar-component.component.html',
   styleUrl: './encriptar-component.component.css'
 })
