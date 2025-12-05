@@ -50,7 +50,13 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -62,7 +68,11 @@
               "buildTarget": "Seguridad_:build:production"
             },
             "development": {
-              "buildTarget": "Seguridad_:build:development"
+              "buildTarget": "Seguridad_:build:development",
+              "allowedHosts": [
+                            "nonrescissory-keturah-unshafted.ngrok-free.dev"
+              ]
+
             }
           },
           "defaultConfiguration": "development"

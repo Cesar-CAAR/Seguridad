@@ -3,12 +3,13 @@ import { provideRouter } from '@angular/router';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { routes } from './app.routes';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { AuthExpiredInterceptor } from './interceptors/auth-expired.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient(withInterceptors([AuthInterceptor])) // <-- FALTABA ESTO
+    provideHttpClient(withInterceptors([AuthInterceptor, AuthExpiredInterceptor])) // <-- FALTABA ESTO
     
       
     

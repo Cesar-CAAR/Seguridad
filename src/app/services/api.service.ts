@@ -7,7 +7,7 @@ import { Observable, tap } from 'rxjs';
 })
 export class ApiService {
 
-  private apiUrl = 'https://localhost:7087/api';
+  private apiUrl = 'https://api.harol.ngrok.dev/api';
 
   constructor(private http: HttpClient) { }
 
