@@ -1,0 +1,30 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "Sistema de encriptado",
+    "owner": "Harol",
+    "description": "Sistemas para encriptad y desencriptad",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Cesar"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Nuevo diagrama STRIDE",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Cesar",
+    "threatTop": 0
+  }
+}
